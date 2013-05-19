@@ -1,0 +1,82 @@
+<style type='text/css'>
+
+/* Whole Page */
+
+body {
+	background:#E5FCC2;
+	color:#594F4F;
+	margin:0;
+	font-family: "Source Sans Pro";
+	font-size: 16px;
+}
+
+a:link, a:visited {
+	color: #547980;
+	text-decoration: underline;
+}
+
+a:hover, a:active {
+	color: #547980;
+	text-decoration: none;
+}
+
+/* Header */
+
+.classtitle {
+	font-family: "Leckerli One";
+    font-size: 70px;
+    text-align: center;
+    border-bottom: 3px double #9DE0AD;
+    color: #547980;
+}
+
+.classtitle_subtext {
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-size: 20px;
+	color: #45ADA8;
+}
+
+/* Page Content */
+
+.content {
+	border-left: 3px double #9DE0AD;
+}
+
+/* Form Elements */
+
+.side_input {
+	background-color: #FCFFF7;
+	border: 1px solid #D8FF9C;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.basicfield_submit {
+	background-color: #FCFFF7;
+	border: 1px solid #D8FF9C;
+	font-family: "Source Sans Pro";
+	font-weight: 600;
+	text-transform: uppercase;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #D8FF9C;
+	color:#594F4F;
+}
+
+/* Item Blocks */
+
+.sitebody_itemblock {
+	background-color: #FCFFF7;
+	border-radius: 8px;
+}
+
+.itemblock_title {
+	color: #547980;
+}
+
+.itemblock_image {
+	border-radius: 8px;
+}
+
+</style>
