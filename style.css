@@ -3,7 +3,7 @@
 /* Universal Elements */
 
 body {
-	background:white;
+	background:#FAFAFA;
 	color:#4D4D4D;
 	margin:0;
 	font-family: "Source Sans Pro", sans-serif;
@@ -144,9 +144,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	width: 900px;
 	position: relative;
 	background: #EDEDED;
-	border-right: 1px solid #bbbbbb;
-	border-left: 1px solid #bbbbbb;
-	box-shadow: 0px 0px 10px #ededed;
+	border-right: 1px solid #ebebeb;
+	border-left: 1px solid #ebebeb;
 }
 
 /* New Navigation */
@@ -155,21 +154,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	width: 130px;
 	padding: 15px;
 	text-align: left;
-	font-size: 16px;
-	background: white;
-	border-top: 1px solid #ededed;
-	font-weight: 500;
-	background: #f7f7f7; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f7f7f7 0%, #ffffff 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #f7f7f7 0%,#ffffff 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-	text-shadow: 1px 1px 1px white;
+	font-size: 14px;
+	color: #4D4D4D;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #ebebeb;
+	font-weight: 800;
 }
 
+.navleft_itembar a:link, .navleft_itembar a:visited {
+ color: #4D4D4D;
+}
+
+.navleft_open {
+	background: #ebebeb;
+}
 
 /* Navigation */
 
@@ -179,10 +178,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	padding: 0;
 	float: left;
 	text-align: left;
-	border-right: 1px solid #bbbbbb;
-	padding-top: 5px;
+	border-right: 1px solid #ebebeb;
 	min-height: 700px;
-	box-shadow: 2px 0px 3px -2px #bbbbbb;
+	background: #FAFAFA;
 }
 
 .navleft_itembox {
@@ -191,7 +189,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	height: 80px;
 	text-align: center;
 	border-radius: 100px;
-	background: white;
+	background: #FAFAFA;
 	z-index: 1;
 	position: relative;
 	border: 3px solid #EDEDED;
@@ -231,7 +229,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	width: 319px;
 	float: left;
 	padding-right: 25px;
-	border-right: 1px solid #bbbbbb;
+	border-right: 1px solid #FAFAFA;
 	min-height: 700px;
 }
 
@@ -263,7 +261,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	float: left;
 	margin-top: 6px;
 	border-radius: 40px;
-	background: white; /* Old browsers */
+	background: #FAFAFA; /* Old browsers */
 
 }
 
@@ -276,12 +274,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 .sitebody_itemblock {
 	float: left;
 	width: 319px;
-	margin-bottom: 15px;
-	margin-right: 15px;
+	margin-bottom: 20px;
 	margin-left: 0px;
-	background-color: white;
+	background-color: #FAFAFA;
 	border-radius: 3px;
-	background: white; /* Old browsers */
+	background: #FAFAFA; /* Old browsers */
 }
 
 .itemblock_title {
@@ -291,7 +288,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	padding-left: 10px;
 	font-weight: 500;
 	font-size: 18px;
-	color: white;
+	color: #FAFAFA;
 	text-align: left;
 	background: #636363; /* Old browsers */
 background: -moz-linear-gradient(top,  #636363 0%, #4d4d4d 100%); /* FF3.6+ */
@@ -327,14 +324,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	height: 60px;
 	border-bottom: 1px solid #ededed;
 	font-size: 14px;
-	background: #f7f7f7; /* Old browsers */
-	background: -moz-linear-gradient(top,  #f7f7f7 0%, #ffffff 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #f7f7f7 0%,#ffffff 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #f7f7f7 0%,#ffffff 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	background: #FAFAFA;
 	
 }
 
@@ -346,7 +336,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 .itemblock_bottompanel {
 	height: 45px;
 	width: 319px;
-
+	background: #FAFAFA;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 
 .itemblock_block1 {
@@ -366,16 +358,94 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 
 .itemblock_block3 {
 	float:left;
-	width: 208px;
+	width: 227px;
 	height: 45px;
 	border-bottom-right-radius: 3px;
+	position: relative;
+}
+
+.block3_leftcircle {
+	width: 25px;
+	height: 25px;
+	margin: 10px;
+	border-radius: 30px;
+	background: #ebebeb;
+	float: left;
+	z-index: 1;
+}
+
+.block3_rightcircle {
+	width: 25px;
+	height: 25px;
+	margin: 10px;
+	border-radius: 30px;
+	background: #ebebeb;
+	float: right;
+	z-index: 1;
+}
+
+.block3_lowline {
+	position: absolute;
+	top: 21px;
+	left: 15px;
+	width: 197px;
+	height: 3px;
+	background: #ebebeb;
+	z-index: 1;
+}
+
+.block3_cirque {
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	background: #52988b;
+	border-radius: 15px;
+	top: 17px;
+	left: 17px;
+	z-index: 2;
+}
+
+.block3_slidefill {
+	position: absolute;
+	width: 183px;
+	height: 5px;
+	top: 20px;
+	left: 21px;
+	z-index: 3;
+}
+
+.block3_fill {
+	height: 5px;
+	width: 25%;
+	background: #52988b;
+	z-index: 3;
+	border-radius: 5px;
+}
+
+.itemblock_innersquare {
+	padding: 10px;
+	width: 25px;
+	height: 25px;
+}
+
+.itemblock_innercircle {
+	margin: 10px;
+	width: 17px;
+	height: 24px;
+	background: #ebebeb;
+	border-radius: 30px;
+	font-weight: 800;
+	font-size: 17px;
+	color: #52988b;
+	padding-left: 8px;
+	padding-top: 1px;
 }
 
 /* Front Class List Elements */
 
 .classrowfront {
 	width: 299px;
-	background-color: white;
+	background-color: #FAFAFA;
 	border-radius: 3px;
 	font-weight: 200;
 	font-size: 18px;
@@ -385,7 +455,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 
 .classrow {
 	width: 675px;
-	background-color: white;
+	background-color: #FAFAFA;
 	border-radius: 2px;
 	font-weight: 200;
 	font-size: 22px;
@@ -396,7 +466,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 
 .classrow_inactive {
 	width: 675px;
-	background-color: white;
+	background-color: #FAFAFA;
 	border-radius: 2px;
 	font-weight: 200;
 	font-size: 16px;
@@ -442,14 +512,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 
 .classrow_icon {
 	font-family: 'Heydings Common Icons';
-	color: #949494;
+	color: #bbbbbb;
 	font-weight: normal;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .classrow_icon_inactive {
 	font-family: 'Heydings Common Icons';
-	color: #949494;
+	color: #bbbbbb;
 	font-weight: normal;
 	font-size: 14px;
 }
@@ -515,8 +585,8 @@ cursor: pointer;
 }
 
 .basicfield_label {
-	background-color: white;
-	border: 1px solid white;
+	background-color: #FAFAFA;
+	border: 1px solid #FAFAFA;
 	border-right: 0;
 	padding: 10px;
 	font-family: "Source Sans Pro";
@@ -536,15 +606,15 @@ cursor: pointer;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	background: white;
+	background: #FAFAFA;
 	top: 2;
 	margin-bottom: 6px;
 }
 
 .basicfield_selectholder {
-	background-color: white;
-	border-top: 1px solid white;
-	border-right: 1px solid white;
+	background-color: #FAFAFA;
+	border-top: 1px solid #FAFAFA;
+	border-right: 1px solid #FAFAFA;
 	border-left: 1px dashed #949494;
 	padding: 9px;
 	padding-bottom: 10px;
@@ -558,9 +628,9 @@ cursor: pointer;
 }
 
 .basicfield_input {
-	background-color: white;
-	border-top: 1px solid white;
-	border-right: 1px solid white;
+	background-color: #FAFAFA;
+	border-top: 1px solid #FAFAFA;
+	border-right: 1px solid #FAFAFA;
 	border-left: 1px dashed #949494;
 	padding: 9px;
 	padding-bottom: 10px;
@@ -573,7 +643,7 @@ cursor: pointer;
 }
 
 .basicfield_select {
-	background: white;
+	background: #FAFAFA;
 	border: 1px solid #949494;
 	padding: 9px;
 	font-family: "Source Sans Pro";
@@ -583,8 +653,8 @@ cursor: pointer;
 }
 
 .basicfield_submit {
-	background-color: white;
-	border: 1px solid white;
+	background-color: #FAFAFA;
+	border: 1px solid #FAFAFA;
 	padding: 10px;
 	margin-top: 10px;
 	font-family: "Source Sans Pro";
@@ -607,7 +677,7 @@ cursor: pointer;
 	padding-right: 35px;
 	padding-left: 35px;
 	border-radius: 5px;
-	border: 10px solid white;
+	border: 10px solid #FAFAFA;
 }
 
 /* View Classes Page */
@@ -664,7 +734,7 @@ cursor: pointer;
 	padding: 10px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	background: white;
+	background: #FAFAFA;
 	border-radius: 2px;
 	color: #4e9689;
 	font-weight: bold;
@@ -695,7 +765,7 @@ cursor: pointer;
 
 .studentrow {
 	width: 380px;
-	background-color: white;
+	background-color: #FAFAFA;
 	border-radius: 2px;
 	font-weight: 200;
 	font-size: 18px;

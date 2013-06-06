@@ -5,7 +5,7 @@
 								Dashboard
 							</a>
 					</div>
-					<div class="navleft_itembar">
+					<div class="navleft_itembar  navleft_open">
 							<a href="main.php?p=activities">
 								Activities
 							</a>

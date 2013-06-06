@@ -25,10 +25,27 @@
 							</div>
 							<div class="itemblock_bottompanel">
 								<div class="itemblock_block1">
+									<div class="itemblock_innercircle">
+										3
+									</div>
 								</div>
 								<div class="itemblock_block2">
+									<div class="itemblock_innersquare">
+										<img src="images/pie.png">
+									</div>
 								</div>
 								<div class="itemblock_block3">
+									<div class="block3_leftcircle">
+									</div>
+									<div class="block3_rightcircle">
+									</div>
+									<div class="clear"></div>
+									<div class="block3_lowline"></div>
+									<div class="block3_cirque"></div>
+									<div class="block3_slidefill">
+										<div class="block3_fill" style="width: 72%">
+										</div>
+									</div>
 								</div>
 								<div class="clear">
 								</div>
@@ -36,8 +53,54 @@
 						</div>
 
 
-						<div class="clear">
+
+						<div class="sitebody_itemblock">
+							<div class="itemblock_title">
+								Movie Review Wall
+							</div>
+							<div class="itemblock_class">
+								<a href="main.php?p=class">
+									English 1
+								</a>
+							</div>
+							<div class="itemblock_middletext">
+								<span class="itemblock_strong">Assignment #1:</span> Review one of your favorite movies, using 5 vocabulary words from Unit 6. At least 200 words.
+							</div>
+							<div class="itemblock_bottompanel">
+								<div class="itemblock_block1">
+									<div class="itemblock_innercircle">
+										8
+									</div>
+								</div>
+								<div class="itemblock_block2">
+									<div class="itemblock_innersquare">
+										<img src="images/pie.png">
+									</div>
+								</div>
+								<div class="itemblock_block3">
+									<div class="block3_leftcircle">
+									</div>
+									<div class="block3_rightcircle">
+									</div>
+									<div class="clear"></div>
+									<div class="block3_lowline"></div>
+									<div class="block3_cirque"></div>
+									<div class="block3_slidefill">
+										<div class="block3_fill" style="width: 27%">
+										</div>
+									</div>
+								</div>
+								<div class="clear">
+								</div>
+							</div>
 						</div>
+
+
+
+
+
+
+						
 
 					
 				</div>
