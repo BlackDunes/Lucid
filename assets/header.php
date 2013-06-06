@@ -17,7 +17,7 @@
 			</div>
 			<div class="headrunner layer4">
 				<div class="headrunner_loggedin">
-					<a href="something"><span class="text_strong">About</span></a>&nbsp;&nbsp;<span class="text_black">|</span>&nbsp;&nbsp;<a href="something"><span class="text_strong">Blog</span></a>&nbsp;&nbsp;<span class="text_black">|</span>&nbsp;&nbsp;<a href="logout"><span class="text_strong">Log Out</span></a>
+					<a href="something">About</a>&nbsp;&nbsp;<span class="text_black">|</span>&nbsp;&nbsp;<a href="something">Blog</a>&nbsp;&nbsp;<span class="text_black">|</span>&nbsp;&nbsp;<a href="logout">Log Out</a>
 				</div>
 				<div class="clear">
 				</div>

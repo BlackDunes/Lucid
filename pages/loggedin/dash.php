@@ -1,6 +1,7 @@
 <?php
-	echo'<div class="sitebody_sectionheader">
-						Active Activities
+	echo'<div class="sitebody_leftcolumn">
+			<div class="sitebody_sectionheader">
+						Current Activities
 					</div>
 					<div class="sectionheader_addnew">
 						Create
@@ -8,7 +9,7 @@
 					<div class="clear">
 					</div>
 
-					<div class="sitebody_blockholder">
+
 
 						<div class="sitebody_itemblock">
 							<div class="itemblock_title">
@@ -19,53 +20,29 @@
 									American Literature
 								</a>
 							</div>
-							<div class="itemblock_image" style="background-image: url(images/default2.jpg);">
-								<div class="itemblock_imagelighter">
-									<div class="itemblock_notifier">
-										0
-									</div>
+							<div class="itemblock_middletext">
+								<span class="itemblock_strong">Question #3:</span> How is Ishmael\'s obsession with the white whale symbolic?
+							</div>
+							<div class="itemblock_bottompanel">
+								<div class="itemblock_block1">
+								</div>
+								<div class="itemblock_block2">
+								</div>
+								<div class="itemblock_block3">
+								</div>
+								<div class="clear">
 								</div>
 							</div>
 						</div>
 
-						<div class="sitebody_itemblock">
-							<div class="itemblock_title">
-								Article Share
-							</div>
-							<div class="itemblock_class">
-								<a href="main.php?p=class">
-									American Literature
-								</a>
-							</div>
-							<div class="itemblock_image" style="background-image: url(images/default.jpg);">
-								<div class="itemblock_imagelighter">
-									<div class="itemblock_notifier">
-										3
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="sitebody_itemblock">
-							<div class="itemblock_title">
-								World Room
-							</div>
-							<div class="itemblock_class">
-								English 1
-							</div>
-							<div class="itemblock_image" style="background-image: url(images/default3.jpg);">
-								<div class="itemblock_imagelighter">
-									<div class="itemblock_notifier">
-										52
-									</div>
-								</div>
-							</div>
-						</div>
 
 						<div class="clear">
 						</div>
 
-					</div>
+					
+				</div>
+
+				<div class="sitebody_rightcolumn">
 					
 					<div class="sitebody_sectionheader">
 						Active Classes
@@ -77,7 +54,7 @@
 					</div>
 					<div class="clear">
 					</div>
-					<div class="classrow">
+					<div class="classrowfront">
 						<div class="classrow_name">
 							<a href="main.php?p=class">
 								American Literature
@@ -89,7 +66,7 @@
 						<div class="clear">
 						</div>
 					</div>
-					<div class="classrow">
+					<div class="classrowfront">
 						<div class="classrow_name">
 							English 1
 						</div>
@@ -98,5 +75,8 @@
 						</div>
 						<div class="clear">
 						</div>
-					</div>';
+					</div>
+				</div>
+				<div class="clear">
+						</div>';
 ?>
