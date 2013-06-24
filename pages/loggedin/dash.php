@@ -30,8 +30,8 @@
 									</div>
 								</div>
 								<div class="itemblock_block2">
-									<div class="itemblock_innersquare">
-										<img src="images/pie.png">
+									<div class="itemblock_innersquare" id="pie1">
+										
 									</div>
 								</div>
 								<div class="itemblock_block3">
@@ -73,8 +73,7 @@
 									</div>
 								</div>
 								<div class="itemblock_block2">
-									<div class="itemblock_innersquare">
-										<img src="images/pie.png">
+									<div class="itemblock_innersquare" id="pie2">
 									</div>
 								</div>
 								<div class="itemblock_block3">
@@ -118,22 +117,22 @@
 					<div class="clear">
 					</div>
 					<div class="classrowfront">
-						<div class="classrow_name">
+						<div class="classrow_name_front">
 							<a href="main.php?p=class">
 								American Literature
 							</a>
 						</div>
-						<div class="classrow_number">
+						<div class="classrow_number_front">
 							<span class="classrow_icon">A</span>23
 						</div>
 						<div class="clear">
 						</div>
 					</div>
 					<div class="classrowfront">
-						<div class="classrow_name">
+						<div class="classrow_name_front">
 							English 1
 						</div>
-						<div class="classrow_number">
+						<div class="classrow_number_front">
 							<span class="classrow_icon">A</span>7
 						</div>
 						<div class="clear">
@@ -142,4 +141,8 @@
 				</div>
 				<div class="clear">
 						</div>';
+
+						echo '<script src="assets/jquery-1.9.1.min.js"></script>
+		<script src="assets/jscprogresswheel.js"></script>
+		<script src="assets/script_pie.js"></script>';
 ?>

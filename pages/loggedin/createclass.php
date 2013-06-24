@@ -49,20 +49,20 @@
 						</div>
 
 						<div class="basicfield_fieldholder">
-							<div class="basicfield_label">Status:</div>
+							<div class="basicfield_label">Class Site URL:</div>
 							<div class="basicfield_selectholder">
-								<input type="radio" name="status" checked /> Active (Class currently meets regularly)<br />
-								<input type="radio" name="status"/> Inactive (Class currently not meeting)<br />
+								<div class="basicfield_input_before">username.mindmanor.com/</div>
+								<input id="classsiteurl" class="basicfield_input_after" minlength="2" />
 							</div>
 							<div class="clear">
 							</div>
 						</div>
 
 						<div class="basicfield_fieldholder">
-							<div class="basicfield_label">Privacy:</div>
+							<div class="basicfield_label">Status:</div>
 							<div class="basicfield_selectholder">
-								<input type="radio" name="privacy" checked /> Use invite code for students to join<br />
-								<input type="radio" name="privacy"/> Create student accounts<br />
+								<input type="radio" name="status" checked /> Active (Class currently meets regularly)<br />
+								<input type="radio" name="status"/> Inactive (Class currently not meeting)<br />
 							</div>
 							<div class="clear">
 							</div>

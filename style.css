@@ -167,7 +167,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 }
 
 .navleft_open {
-	background: #ebebeb;
+	background: #ededed;
 }
 
 /* Navigation */
@@ -178,7 +178,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	padding: 0;
 	float: left;
 	text-align: left;
-	border-right: 1px solid #ebebeb;
 	min-height: 700px;
 	background: #FAFAFA;
 }
@@ -237,7 +236,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	font-weight: 700;
 	font-size: 32px;
 	padding-right: 12px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	float: left;
 }
 
@@ -245,8 +244,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	font-weight: 200;
 	padding-right: 12px;
 	margin-top: 2px;
-	margin-bottom: 8px;
+	margin-bottom: 10px;
 	float: left;
+	text-align: left;
 }
 
 .sectionheader_addnew {
@@ -321,7 +321,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 .itemblock_middletext {
 	width: 299px;
 	padding: 10px;
-	height: 60px;
+	height: 54px;
 	border-bottom: 1px solid #ededed;
 	font-size: 14px;
 	background: #FAFAFA;
@@ -423,9 +423,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 }
 
 .itemblock_innersquare {
-	padding: 10px;
-	width: 25px;
-	height: 25px;
+	width: 45px;
+	height: 45px;
 }
 
 .itemblock_innercircle {
@@ -454,9 +453,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 }
 
 .classrow {
-	width: 675px;
+	width: 669px;
 	background-color: #FAFAFA;
-	border-radius: 2px;
+	border-radius: 3px;
 	font-weight: 200;
 	font-size: 22px;
 	padding: 10px;
@@ -465,7 +464,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 }
 
 .classrow_inactive {
-	width: 675px;
+	width: 669px;
 	background-color: #FAFAFA;
 	border-radius: 2px;
 	font-weight: 200;
@@ -475,22 +474,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	margin-bottom: 10px;
 }
 
-.classrow_name {
+.classrow_name_front {
 	width: 149px;
 	float: left;
 	margin: 0;
 	padding: 0;
 }
 
+.classrow_name {
+	width: 330px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
 .classrow_name_inactive {
-	width: 300px;
+	width: 330px;
 	float: left;
 	margin: 0;
 	padding: 0;
 	font-style: italic;
 }
 
-.classrow_number {
+.classrow_number_front {
 	width: 149px;
 	float: right;
 	margin: 0;
@@ -500,8 +506,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	text-align: right;
 }
 
+.classrow_number {
+	width: 330px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	color: #4e9689;
+	font-weight: bold;
+	text-align: right;
+}
+
 .classrow_number_inactive {
-	width: 300px;
+	width: 330px;
 	float: right;
 	margin: 0;
 	padding: 0;
@@ -529,6 +545,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 
 .gateway_holder {
 	width: 900px;
+	margin-top: 20px;
 }
 .gateway_tagline {
 	width: 550px;
@@ -578,10 +595,11 @@ border-radius: 2px;
 cursor: pointer;
 }
 
-/* Input Fields */
+
+/* On-Page Input Fields */
 .basicform {
 	margin-top: 12px;
-	width: 642px;
+	width: 689px;
 }
 
 .basicfield_label {
@@ -598,10 +616,12 @@ cursor: pointer;
 	text-align: right;
 	position: relative;
 	top: 2;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 
 .basicfield_fieldholder {
-	width: 642px;
+	width: 689px;
 	border: 0;
 	margin: 0;
 	padding: 0;
@@ -609,6 +629,7 @@ cursor: pointer;
 	background: #FAFAFA;
 	top: 2;
 	margin-bottom: 6px;
+	border-radius: 3px;
 }
 
 .basicfield_selectholder {
@@ -621,10 +642,12 @@ cursor: pointer;
 	font-family: "Source Sans Pro";
 	font-weight: 200;
 	font-size: 16px;
-	width: 381px;
+	width: 528px;
 	text-align: left;
 	float: left;
 	position: relative;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 .basicfield_input {
@@ -637,9 +660,29 @@ cursor: pointer;
 	font-family: "Source Sans Pro";
 	font-weight: 200;
 	font-size: 16px;
-	width: 500px;
+	width: 548px;
 	text-align: left;
 	float: left;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.basicfield_input_before {
+	float: left;
+	color: #bbbbbb;
+}
+.basicfield_input_after {
+	background-color: #FAFAFA;
+	font-family: "Source Sans Pro";
+	font-weight: 200;
+	font-size: 16px;
+	width: 250px;
+	text-align: left;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border: 1px solid #FAFAFA;
+	float: left;
+	position:relative;
+	top: -4px;
 }
 
 .basicfield_select {
@@ -650,6 +693,8 @@ cursor: pointer;
 	font-weight: 200;
 	font-size: 16px;
 	text-align: left;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 .basicfield_submit {
@@ -665,12 +710,13 @@ cursor: pointer;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 	float: right;
+	border-radius: 3px;
 }
 
-/* Registration Page */
+/* Popups */
 
-.wholepage_formholder {
-	width: 650px;
+.popup_formholder {
+	width: 450px;
 	text-align: center;
 	background: #EDEDED;
 	padding: 20px;
@@ -678,6 +724,136 @@ cursor: pointer;
 	padding-left: 35px;
 	border-radius: 5px;
 	border: 10px solid #FAFAFA;
+	display: none;
+}
+
+.basicform_popup {
+	margin-top: 12px;
+	width: 450px;
+}
+
+.basicfield_label_popup {
+	background-color: #FAFAFA;
+	border: 1px solid #FAFAFA;
+	border-right: 0;
+	padding: 10px;
+	font-family: "Source Sans Pro";
+	font-weight: 400;
+	font-size: 14px;
+	font-style: italic;
+	float: left;
+	width: 120px;
+	text-align: right;
+	position: relative;
+	top: 2;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.label_ajaxload_popup {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 3;
+	left: 412;
+}
+
+.basicfield_fieldholder_popup {
+	width: 450px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background: #FAFAFA;
+	top: 2;
+	margin-bottom: 6px;
+	border-radius: 3px;
+}
+
+.basicfield_selectholder_popup {
+	background-color: #FAFAFA;
+	border-top: 1px solid #FAFAFA;
+	border-right: 1px solid #FAFAFA;
+	border-left: 1px dashed #949494;
+	padding: 9px;
+	padding-bottom: 10px;
+	font-family: "Source Sans Pro";
+	font-weight: 200;
+	font-size: 16px;
+	width: 289px;
+	text-align: left;
+	float: left;
+	position: relative;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.basicfield_input_popup {
+	background-color: #FAFAFA;
+	border-top: 1px solid #FAFAFA;
+	border-right: 1px solid #FAFAFA;
+	border-left: 1px dashed #949494;
+	padding: 9px;
+	padding-bottom: 10px;
+	font-family: "Source Sans Pro";
+	font-weight: 200;
+	font-size: 16px;
+	width: 309px;
+	text-align: left;
+	float: left;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.basicfield_select_popup {
+	background: #FAFAFA;
+	border: 1px solid #949494;
+	padding: 9px;
+	font-family: "Source Sans Pro";
+	font-weight: 200;
+	font-size: 16px;
+	text-align: left;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.basicfield_submit_popup {
+	background-color: #FAFAFA;
+	border: 1px solid #FAFAFA;
+	padding: 10px;
+	margin-top: 10px;
+	font-family: "Source Sans Pro";
+	font-weight: 100;
+	font-size: 20px;
+	width: 200px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	float: right;
+	border-radius: 3px;
+	cursor: pointer;
+	position: relative;
+}
+
+.basicfield_submit_loadoverlay {
+	position: absolute;
+	width:200px;
+	height: 25px;
+	background-color: #FAFAFA;
+	text-align: center;
+	z-index: 3;
+	top: 7;
+	display: none;
+}
+
+.basicfield_notify_popup {
+	padding-top: 10px;
+	height: 25px;
+	width: 225px;
+	text-align: center;
+	float: left;
+	color: #964E4E;
+	font-size: 14px;
 }
 
 /* View Classes Page */
@@ -887,7 +1063,24 @@ cursor: pointer;
 	color: #4682B4;
 }
 
-.popup {
-	display: none;
+.ajax_checkmark {
+	font-family: 'Heydings Common Icons';
+	color: #4e9689;
+	font-size: 22px;
+	font-style: normal;
+	position: absolute;
+	top: 3px;
+	right: 5px;
 }
+
+.ajax_redx {
+	font-family: 'Heydings Common Icons';
+	color: #964E4E;
+	font-size: 22px;
+	font-style: normal;
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+
 </style>

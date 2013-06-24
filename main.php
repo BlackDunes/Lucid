@@ -6,6 +6,7 @@
 <html>
 	<head>';
     include ('style.css');
+    $page = $_GET['p'];
     echo '
 		<title>
 			Lucid
@@ -22,8 +23,8 @@
 
 		echo '<div class="sitebody_contentright">';
 
-		if ($_GET['p']) {
-            $page = $_GET['p'];
+		if ($page) {
+            
             if (file_exists('pages/loggedin/'.$page.'.php')) {
               	echo "";
               	include('pages/loggedin/'.$page.'.php');

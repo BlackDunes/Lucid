@@ -55,7 +55,7 @@
 						<div class="clear">
 						</div>
 					</div>
-					<div class="sitebody_sectionheader">
+					<div class="sitebody_sectionheader addtopmargin">
 						Inactive Classes
 					</div>
 					<div class="clear">
