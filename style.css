@@ -59,7 +59,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', end
 	color: #EDEDED;
 }
 
-.headrunner_loggedin a:link{
+.headrunner_loggedin a:link, .headrunner_loggedin a:visited{
 	color: #EDEDED
 }
 

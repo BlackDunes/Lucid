@@ -142,7 +142,5 @@
 				<div class="clear">
 						</div>';
 
-						echo '<script src="assets/jquery-1.9.1.min.js"></script>
-		<script src="assets/jscprogresswheel.js"></script>
-		<script src="assets/script_pie.js"></script>';
+						echo '<script src="assets/jquery-1.9.1.min.js"></script>';
 ?>

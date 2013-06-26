@@ -22,7 +22,7 @@
 				<div class="headrunner_loggedin">
 					<a href="something">About</a>&nbsp;&nbsp;<span class="text_black">|</span>&nbsp;&nbsp;<a href="something">Blog</a>';
 					if ($_SESSION["username"]){
-						echo '&nbsp;&nbsp;<span class="text_black">|</span>&nbsp;&nbsp;<a href="logout">Log Out</a>';
+						echo '&nbsp;&nbsp;<span class="text_black">|</span>&nbsp;&nbsp;<a href="logout.php">Log Out</a>';
 					}
 				echo '</div>
 				<div class="clear">
