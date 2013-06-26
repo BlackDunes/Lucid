@@ -167,8 +167,14 @@ echo '
 						<div class="clear">
 						</div>
 
-						<input type="submit" id="submit" class="basicfield_submit_popup" value="Log In" />
+						<div class="basicfield_notify_popup" id="notify3"></div>
+						<div id="login_botton" class="basicfield_submit_popup">
+							<div class="basicfield_submit_loadoverlay" id="notifybutton3">
+							</div>
+							Log In
+						</div>
 						<div class="clear">
+						</div>
 						</div>
 
 					</form>

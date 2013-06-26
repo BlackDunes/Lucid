@@ -252,4 +252,53 @@ $(document).ready(function()//When the dom is ready
 		
 	});
 
+	$("#login_botton").click(function()
+	{
+			$("#notifybutton3").html('<img src="images/ajax-loader-l.gif">');
+			$("#notifybutton3").show();
+			var username = $("#logusername").val();
+			var password = $("#logpassword").val();
+
+			$.ajax({ //Make the Ajax Request
+				type: "GET",
+ 				url: "assets/ajax_login.php", //file name
+ 				data: "username="+ username +"&password="+ password, //data
+ 				success: function(server_response){
+
+ 					if(server_response == '1')
+ 					{
+ 						$("#notify3").html('Logged in');
+ 						document.location.reload(true);
+ 						
+ 					}
+ 					else if(server_response == '2')
+ 					{
+ 						$("#notify3").html('Incorrect Password');
+ 						$("#notifybutton3").hide();
+ 					}
+  					else if(server_response == '3')
+ 					{
+ 						$("#notify3").html('No password submitted');
+ 						$("#notifybutton3").hide();
+ 					}
+ 					else if(server_response == '4')
+ 					{
+ 						 $("#notify3").html('Username not found');
+ 						 $("#notifybutton3").hide();
+ 					}
+ 					else if(server_response == '5')
+ 					{
+ 						 $("#notify3").html('No username submitted');
+ 						 $("#notifybutton3").hide();
+ 					}
+ 					else if(server_response == '6')
+ 					{
+ 						 $("#notify3").html('MySQL Error');
+ 						 $("#notifybutton3").hide();
+ 					}
+ 				}
+ 			});
+		
+	});
+
 });
