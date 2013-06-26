@@ -190,7 +190,8 @@ $(document).ready(function()//When the dom is ready
  						closeBPopup();
  						$('#regpop2').bPopup({
         					speed: 450,
-        					transition: 'slideUp'
+        					transition: 'slideIn',
+        					modalClose: false
     					});
  						
  					}
@@ -215,6 +216,7 @@ $(document).ready(function()//When the dom is ready
 	{
 			$("#notifybutton2").html('<img src="images/ajax-loader-l.gif">');
 			$("#notifybutton2").show();
+			var username = $("#username").val();
 			var firstname = $("#firstname").val();
 			var lastname = $("#lastname").val();
 			var state = $("#state").val();
@@ -223,13 +225,14 @@ $(document).ready(function()//When the dom is ready
 			$.ajax({ //Make the Ajax Request
 				type: "GET",
  				url: "assets/ajax_register_user2.php", //file name
- 				data: "firstname="+ firstname +"&lastname="+ lastname +"&state="+ state +"&gradelevel="+ gradelevel, //data
+ 				data: "username="+ username +"&firstname="+ firstname +"&lastname="+ lastname +"&state="+ state +"&gradelevel="+ gradelevel, //data
  				success: function(server_response){
 
  					if(server_response == '1')
  					{
  						function closeBPopup() { $("#regpop2").bPopup().close() }
  						closeBPopup();
+ 						location.reload(true);
  						
  					}
  					else if(server_response == '2')

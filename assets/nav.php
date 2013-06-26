@@ -5,7 +5,7 @@
 							echo ' navleft_open';
 						}
 					echo '">
-							<a href="main.php">
+							<a href="index.php">
 								Dashboard
 							</a>
 					</div>
@@ -14,7 +14,7 @@
 							echo ' navleft_open';
 						}
 					echo '">
-							<a href="main.php?p=activities">
+							<a href="index.php?p=activities">
 								Activities
 							</a>
 					</div>
@@ -23,7 +23,7 @@
 							echo ' navleft_open';
 						}
 					echo '">
-							<a href="main.php?p=classes">
+							<a href="index.php?p=classes">
 								Classes
 							</a>
 					</div>
@@ -32,7 +32,7 @@
 							echo ' navleft_open';
 						}
 					echo '">
-							<a href="main.php?p=settings">
+							<a href="index.php?p=settings">
 								Settings
 							</a>
 					</div>
