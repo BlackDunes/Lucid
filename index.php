@@ -33,7 +33,8 @@
 		echo '<script src="assets/jquery-1.9.1.min.js"></script>
 		<script src="assets/jquery.bpopup.min.js"></script>
 				<script src="assets/scripts.js"></script>
-				<script src="assets/registration.js"></script>';
+				<script src="assets/registration.js"></script>
+				<script src="assets/createclass.js"></script>';
 	echo '</body>
 </html>';
 

@@ -1,9 +1,12 @@
 <?php
-	echo '<div class="sitebody_sectionheader nobottommargin">
+	$link = mysqli_connect($sqlhostname, $sqlusername , $sqlpassword, 'mm_classes');
+	$userid = $_SESSION["id"];
+	if ($link) {
+		echo '<div class="sitebody_sectionheader nobottommargin">
 						Active Classes
 					</div>
 					<div class="sectionheader_addnew">
-						<a href="main.php?p=createclass">
+						<a href="index.php?p=createclass">
 							Create
 						</a>
 					</div>
@@ -13,12 +16,15 @@
 						Classes that are now meeting and have active activities
 					</div>
 					<div class="clear">
-					</div>
+					</div>';
 
-					<div class="classrow">
+	$active_classes = mysqli_query($link, "SELECT * FROM main WHERE teachid='$userid' AND active = 1 ORDER BY name ASC");
+	while($active = mysqli_fetch_array($active_classes, MYSQLI_ASSOC)) {
+
+					echo'<div class="classrow">
 						<div class="classrow_name">
-							<a href="main.php?p=class">
-								American Literature
+							<a href="main.php?p=class&id=' . $active['id'] . '">
+								' . $active['name'] . '
 							</a><br />
 							<span class="class_minidetails">
 								<a href="class/testclass/" target="_BLANK">
@@ -35,59 +41,29 @@
 						</div>
 						<div class="clear">
 						</div>
-					</div>
-					<div class="classrow">
-						<div class="classrow_name">
-								English 1<br />
-							<span class="class_minidetails">
-								<a href="test">
-									Homepage
-								</a>
-								&nbsp;&#8226;&nbsp;
-								<a href="test">
-									Edit
-								</a>
-							</span>
-						</div>
-						<div class="classrow_number">
-							<span class="classrow_icon">A</span>7
-						</div>
-						<div class="clear">
-						</div>
-					</div>
-					<div class="sitebody_sectionheader addtopmargin">
+					</div>';
+	}
+
+
+					
+					echo'<div class="sitebody_sectionheader addtopmargin">
 						Inactive Classes
 					</div>
 					<div class="clear">
-					</div>
-					<div class="classrow_inactive">
+					</div>';
+
+	$inactive_classes = mysqli_query($link, "SELECT * FROM main WHERE teachid='$userid' AND active = 0 ORDER BY name ASC");
+	while($inactive = mysqli_fetch_array($inactive_classes, MYSQLI_ASSOC)) {
+					echo '<div class="classrow_inactive">
 						<div class="classrow_name_inactive">
-							Intro to Web Design<br />
+							' . $inactive['name'] . '<br />
 						</div>
 						<div class="classrow_number_inactive">
 							<span class="classrow_icon_inactive">A</span>13
 						</div>
 						<div class="clear">
 						</div>
-					</div>
-					<div class="classrow_inactive">
-						<div class="classrow_name_inactive">
-							Reading & Writing Workshop<br />
-						</div>
-						<div class="classrow_number_inactive">
-							<span class="classrow_icon_inactive">A</span>7
-						</div>
-						<div class="clear">
-						</div>
-					</div>
-					<div class="classrow_inactive">
-						<div class="classrow_name_inactive">
-							Science Fiction Film<br />
-						</div>
-						<div class="classrow_number_inactive">
-							<span class="classrow_icon_inactive">A</span>28
-						</div>
-						<div class="clear">
-						</div>
 					</div>';
+		}
+	}
 ?>

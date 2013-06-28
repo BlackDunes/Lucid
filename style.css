@@ -620,6 +620,15 @@ cursor: pointer;
 	border-bottom-left-radius: 3px;
 }
 
+.label_ajaxload {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 3;
+	left: 650;
+	z-index: 2;
+}
+
 .basicfield_fieldholder {
 	width: 689px;
 	border: 0;
@@ -631,6 +640,8 @@ cursor: pointer;
 	margin-bottom: 6px;
 	border-radius: 3px;
 }
+
+
 
 .basicfield_selectholder {
 	background-color: #FAFAFA;

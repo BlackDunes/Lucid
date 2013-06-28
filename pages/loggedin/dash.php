@@ -16,7 +16,7 @@
 								Moby Dick Discussion
 							</div>
 							<div class="itemblock_class">
-								<a href="main.php?p=class">
+								<a href="index.php?p=class">
 									American Literature
 								</a>
 							</div>
@@ -59,7 +59,7 @@
 								Movie Review Wall
 							</div>
 							<div class="itemblock_class">
-								<a href="main.php?p=class">
+								<a href="index.php?p=class">
 									English 1
 								</a>
 							</div>
@@ -110,7 +110,7 @@
 						Active Classes
 					</div>
 					<div class="sectionheader_addnew">
-						<a href="main.php?p=createclass">
+						<a href="index.php?p=createclass">
 							Create
 						</a>
 					</div>
@@ -118,7 +118,7 @@
 					</div>
 					<div class="classrowfront">
 						<div class="classrow_name_front">
-							<a href="main.php?p=class">
+							<a href="index.php?p=class">
 								American Literature
 							</a>
 						</div>
