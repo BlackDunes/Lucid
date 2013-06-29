@@ -58,5 +58,25 @@ function statesList() {
                     'WI'=>"Wisconsin",  
                     'WY'=>"Wyoming");  
     return $states;  
-}  
+} 
+
+function namePrefix() {  
+    $prefix = array('Mrs.'=>"Mrs.",  
+                    'Ms.'=>"Ms.",
+                    'Miss'=>"Miss",
+                    'Mr.'=>"Mr.",
+                    'Prof.'=>"Prof.",
+                    'Dr.'=>"Dr.",  );  
+    return $prefix;  
+}
+
+function gradeLevels() {  
+    $gradelevels = array('no'=>"I'm not a teacher",
+                    'elem'=>"Elementary Education",  
+                    'middle'=>"Middle School (6-8)",
+                    'high'=>"High School (9-12)",
+                    'college'=>"College / University");  
+    return $gradelevels;  
+}
+
 ?>

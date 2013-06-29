@@ -23,7 +23,7 @@
 
 					echo'<div class="classrow">
 						<div class="classrow_name">
-							<a href="main.php?p=class&id=' . $active['id'] . '">
+							<a href="index.php?p=class&id=' . $active['id'] . '">
 								' . $active['name'] . '
 							</a><br />
 							<span class="class_minidetails">

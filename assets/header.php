@@ -2,12 +2,14 @@
 		echo '<div class="header">
 				<div class="sitetitle">
 					<div class="sitetitle_logo">
-						<a href="main.php">
+						<a href="index.php">
 							<img src="images/lillog.png">
 						</a>
 					</div>
 					<div class="sitetitle_text">
-						<span class="text_strong">Mind</span>Manor
+						<a href="index.php">
+							<span class="text_strong">Mind</span>Manor
+						</a>
 					</div>
 					<div class="sitetitle_login">';
 						if ($_SESSION["username"]){

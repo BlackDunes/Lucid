@@ -102,9 +102,11 @@
 						
 
 					
-				</div>
-
-				<div class="sitebody_rightcolumn">
+				</div>';
+$link = mysqli_connect($sqlhostname, $sqlusername , $sqlpassword, 'mm_classes');
+$userid = $_SESSION["id"];
+if ($link) {
+				echo '<div class="sitebody_rightcolumn">
 					
 					<div class="sitebody_sectionheader">
 						Active Classes
@@ -115,11 +117,14 @@
 						</a>
 					</div>
 					<div class="clear">
-					</div>
-					<div class="classrowfront">
+					</div>';
+	$active_classes = mysqli_query($link, "SELECT * FROM main WHERE teachid='$userid' AND active = 1 ORDER BY name ASC");
+	while($active = mysqli_fetch_array($active_classes, MYSQLI_ASSOC)) {
+
+					echo '<div class="classrowfront">
 						<div class="classrow_name_front">
-							<a href="index.php?p=class">
-								American Literature
+							<a href="index.php?p=class&id=' . $active['id'] . '">
+								' . $active['name'] . '
 							</a>
 						</div>
 						<div class="classrow_number_front">
@@ -127,19 +132,14 @@
 						</div>
 						<div class="clear">
 						</div>
-					</div>
-					<div class="classrowfront">
-						<div class="classrow_name_front">
-							English 1
-						</div>
-						<div class="classrow_number_front">
-							<span class="classrow_icon">A</span>7
-						</div>
-						<div class="clear">
-						</div>
-					</div>
-				</div>
-				<div class="clear">
+					</div>';
+	}
+
+
+				echo '</div>';
+}
+
+				echo '<div class="clear">
 						</div>';
 
 						echo '<script src="assets/jquery-1.9.1.min.js"></script>';

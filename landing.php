@@ -18,7 +18,7 @@ echo '
 						</div>
 						<div class="clear"></div>
 					</div>
-				</div>
+				
 
 
 				<div class="popup_formholder" id="regpop">
@@ -118,18 +118,16 @@ echo '
 							</div>
 						</div>
 
-						<div class="basicfield_fieldholder_popup">
-							<div class="basicfield_label">Grade Level Taught:</div>
-							<div class="basicfield_selectholder_popup">
+						<div class="basicfield_fieldholder_popup">';
+						$gradelevels = gradeLevels(); 
+							echo '<div class="basicfield_label">Grade Level Taught:</div>';
+							echo '<div class="basicfield_selectholder_popup">';
 
-							<select class="basicfield_select_popup" name="gradelevel" id="gradelevel">
-								<option selected="selected">Select your grade level...</option>
-                				<option value="elem">Elementary Education</option>
-                				<option value="middle">Middle School (6-8)</option>
-                				<option value="high">High School (9-12)</option>
-                				<option value="college">College / University</option>
-                				<option value="no">I\'m not a teacher</option>
-                			</select>
+							echo '<select class="basicfield_select_popup" name="gradelevel" id="gradelevel">';
+							foreach($gradelevels as $key=>$value) {  
+                				echo '<option value="'.$key.'">'.$value.'</option>';  
+        						}  
+                			echo '</select>
 							</div>
 							<div class="clear">
 							</div>
