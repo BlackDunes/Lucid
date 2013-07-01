@@ -34,7 +34,8 @@
 		<script src="assets/jquery.bpopup.min.js"></script>
 				<script src="assets/scripts.js"></script>
 				<script src="assets/registration.js"></script>
-				<script src="assets/createclass.js"></script>';
+				<script src="assets/createclass.js"></script>
+				<script src="assets/settings.js"></script>';
 	echo '</body>
 </html>';
 

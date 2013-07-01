@@ -33,27 +33,27 @@ echo '
 					<div class="clear">
 					</div>
 
-					<form class="basicform_popup">
+					<form class="basicform_popup" id="reg1">
 
 						<div class="basicfield_label_popup">
 							<div class="label_ajaxload_popup form_invalid" id="ajaxusername">
 							</div>
 							Username:</div>
-						<input id="username" class="basicfield_input_popup" minlength="3" />
+						<input name="username" id="username" class="basicfield_input_popup" minlength="3" />
 						<div class="clear">
 						</div>
 
 						<div class="basicfield_label_popup" >
 							<div class="label_ajaxload_popup form_invalid" id="ajaxemail">
 							</div>E-mail:</div>
-						<input id="email" class="basicfield_input_popup" minlength="3" />
+						<input name="email" id="email" class="basicfield_input_popup" minlength="3" />
 						<div class="clear">
 						</div>
 
 						<div class="basicfield_label_popup">
 							<div class="label_ajaxload_popup form_invalid" id="ajaxpassword">
 							</div>Password:</div>
-						<input id="password" type="password" class="basicfield_input_popup" minlength="3" />
+						<input name="password" id="password" type="password" class="basicfield_input_popup" minlength="3" />
 						<div class="clear">
 						</div>
 
@@ -61,7 +61,7 @@ echo '
 							<div class="label_ajaxload_popup form_invalid" id="ajaxconfpassword">
 							</div>Confirm Password:</div>
 
-						<input type="password" id="confpassword" class="basicfield_input_popup" minlength="3" />
+						<input name="confpassword" type="password" id="confpassword" class="basicfield_input_popup" minlength="3" />
 						<div class="clear">
 						</div>
 
@@ -86,17 +86,17 @@ echo '
 					<div class="sitebody_sectioncaption">
 						You\'re now registered with <b>Mind Manor</b>. Please provide a bit more information to customize your experience.
 					</div>
-					<form class="basicform_popup">
+					<form class="basicform_popup" id="reg2">
 
 						<div class="basicfield_label_popup">
 							First Name:</div>
-						<input id="firstname" class="basicfield_input_popup" minlength="3" />
+						<input name="firstname" id="firstname" class="basicfield_input_popup" minlength="3" />
 						<div class="clear">
 						</div>
 
 						<div class="basicfield_label_popup" >
 							Last Name:</div>
-						<input id="lastname" class="basicfield_input_popup" minlength="3" />
+						<input name="lastname" id="lastname" class="basicfield_input_popup" minlength="3" />
 						<div class="clear">
 						</div>
 

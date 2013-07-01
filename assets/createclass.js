@@ -84,7 +84,7 @@ $("#createclassbutton").click(function()
 
  					if(server_response == '1')
  					{
- 						window.location = "index.php?p=classes"
+ 						window.location = "index.php?p=classes&upd=1"
  						
  					}
  					else if(server_response == '2')

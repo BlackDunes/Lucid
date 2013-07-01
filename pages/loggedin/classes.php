@@ -2,6 +2,11 @@
 	$link = mysqli_connect($sqlhostname, $sqlusername , $sqlpassword, 'mm_classes');
 	$userid = $_SESSION["id"];
 	if ($link) {
+		if ($_GET["upd"] == 1) {
+			echo '<div class="sitebody_topnotifier">
+				Class Successfully Created
+				</div>';
+		}
 		echo '<div class="sitebody_sectionheader nobottommargin">
 						Active Classes
 					</div>

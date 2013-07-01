@@ -173,15 +173,12 @@ $(document).ready(function()//When the dom is ready
 		{
 			$("#notifybutton").html('<img src="images/ajax-loader-l.gif">');
 			$("#notifybutton").show();
-			var username = $("#username").val();
-			var email = $("#email").val();
-			var password = $("#password").val();
-			var confpassword = $("#confpassword").val();
+			var thedata = $("#reg1").serialize();
 
 			$.ajax({ //Make the Ajax Request
 				type: "GET",
  				url: "assets/ajax_register_user.php", //file name
- 				data: "email="+ email +"&username="+ username +"&password="+ password, //data
+ 				data: thedata, //data
  				success: function(server_response){
 
  					if(server_response == '1')

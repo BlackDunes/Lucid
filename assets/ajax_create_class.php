@@ -6,7 +6,9 @@ if ($link) {
 	{
 
 		$classname = trim($_GET["classname"]);
+		$classname = addslashes($classname);
 		$subject = trim($_GET["subject"]);
+		$subject = addslashes($subject);
 		$gradelevel = trim($_GET["gradelevel"]);
 		$classsiteurl = strtolower($_GET["classsiteurl"]);
 		$classsiteurl = trim($classsiteurl);

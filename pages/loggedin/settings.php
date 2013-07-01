@@ -30,7 +30,13 @@
 		</div>
 
 		<div class="profilesettings_left">
-						<div class="basicfield_fieldholder_settings">';
+					<form id="updatesettings">';
+					if ($_GET["upd"] == 1) {
+						echo '<div class="basicfield_topnotifier_settings">
+							Profile Updated
+							</div>';
+						}
+						echo '<div class="basicfield_fieldholder_settings">';
 							$prefix = namePrefix(); 
 							echo '<div class="basicfield_label">Name Prefix:</div>';
 							echo '<div class="basicfield_selectholder_settings">';
@@ -52,19 +58,19 @@
 
 						<div class="basicfield_label_settings">
 							First Name:</div>
-						<input id="firstname" class="basicfield_input_settings" minlength="3" value="' . $user_info_deets['firstname'] . '" />
+						<input name="firstname" id="firstname" class="basicfield_input_settings" minlength="3" value="' . $user_info_deets['firstname'] . '" />
 						<div class="clear">
 						</div>
 
 						<div class="basicfield_label_settings" >
 							Last Name:</div>
-						<input id="lastname" class="basicfield_input_settings" minlength="3" value="' . $user_info_deets['lastname'] . '" />
+						<input name="lastname" id="lastname" class="basicfield_input_settings" minlength="3" value="' . $user_info_deets['lastname'] . '" />
 						<div class="clear">
 						</div>
 
 						<div class="basicfield_label_settings" >
 							Subject Taught:</div>
-						<input id="subject" class="basicfield_input_settings" minlength="3" value="' . $user_info_deets['subject'] . '" />
+						<input name="subject" id="subject" class="basicfield_input_settings" minlength="3" value="' . $user_info_deets['subject'] . '" />
 						<div class="clear">
 						</div>
 
@@ -111,19 +117,19 @@
 
 						<div class="basicfield_label_settings" >
 							Home Town:</div>
-						<input id="town" class="basicfield_input_settings" minlength="3" value="' . $user_info_prof['town'] . '" />
+						<input name="town" id="town" class="basicfield_input_settings" minlength="3" value="' . $user_info_prof['town'] . '" />
 						<div class="clear">
 						</div>
 
 						<div class="basicfield_label_settings" >
 							Name of School:</div>
-						<input id="school" class="basicfield_input_settings" minlength="3" value="' . $user_info_prof['school'] . '" />
+						<input name="school" id="school" class="basicfield_input_settings" minlength="3" value="' . $user_info_prof['school'] . '" />
 						<div class="clear">
 						</div>
 
 						<input type="hidden" value="';
 						echo $userid;
-						echo '" id="userid">
+						echo '" id="userid" name="userid">
 
 						
 
@@ -133,6 +139,7 @@
 							</div>
 							Submit Changes
 						</div>
+					</form>
 						<div class="clear">
 						</div>
 		</div>
