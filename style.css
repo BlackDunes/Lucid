@@ -905,26 +905,12 @@ cursor: pointer;
 
 /* Individual Class Page */
 
-.class_infopanel {
-	width: 220px;
+.class_leftpanel {
+	width: 390px;
 	padding: 0;
 	margin: 0;
-	margin-top: 10px;
+	margin-top: 25px;
 	float: left;
-}
-
-.class_detailrow {
-	padding: 0;
-	padding-top: 3px;
-	padding-bottom: 3px;
-	margin: 0;
-	margin-left: 10px;
-	font-size: 18px;
-	font-weight: 600;
-}
-
-.class_detailspec {
-	font-weight: 200;
 }
 
 .bulletstyle {
@@ -935,15 +921,11 @@ cursor: pointer;
 	color: #EDEDED;
 }
 
-.detail_editsite, .detail_editsite a:link, .detail_editsite a:visited {
-	color: #949494;
-	font-size: 14px;
-	font-weight: 200;
-}
-
 .infopanel_activitysection {
-	width: 200px;
-	padding: 10px;
+	width: 340px;
+	padding: 8px;
+	padding-left: 10px;
+	padding-right:;
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: #FAFAFA;
@@ -952,27 +934,37 @@ cursor: pointer;
 	font-weight: bold;
 }
 
-.class_studentpanel {
-	width: 390;
+.class_rightpanel {
+	width: 315;
 	padding: 0;
-	padding-left: 35px;
 	margin: 0;
-	margin-top: 10px;
-	border-left: 3px double #DEDEDE;
+	margin-top: 25px;
 	float: right;
 }
 
 .class_sectionheader {
-	font-weight: 400;
-	font-size: 30px;
-	padding-right: 8px;
-	margin-top: 0px;
-	margin-bottom: 5px;
-	float: left;
+	font-weight: 300;
+font-size: 20px;
+padding-right: 8px;
+margin-top: 0px;
+margin-bottom: 5px;
+width: 340px;
+padding: 8px;
+color: #FAFAFA;
+text-align: center;
+background: #4e9689;
+background: -moz-linear-gradient(top, #4e9689 0%, #57a899 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4e9689), color-stop(100%,#57a899));
+background: -webkit-linear-gradient(top, #4e9689 0%,#57a899 100%);
+background: -o-linear-gradient(top, #4e9689 0%,#57a899 100%);
+background: -ms-linear-gradient(top, #4e9689 0%,#57a899 100%);
+background: linear-gradient(to bottom, #4e9689 0%,#57a899 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e9689', endColorstr='#57a899',GradientType=0 );
+border-radius: 2px;
 }
 
 .class_addnew {
-	margin-top: 5px;
+	margin-top: 25px;
 }
 
 .studentrow {
@@ -1017,6 +1009,99 @@ cursor: pointer;
 	color: #DB7093;
 	font-weight: normal;
 	font-size: 16px;
+}
+
+.class_infopanel {
+	float: left;
+	width: 290px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	background-color: #FAFAFA;
+	border-radius: 3px;
+	background: #FAFAFA; /* Old browsers */
+}
+
+.class_infopanel_title {
+	width: 270px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: 300;
+	font-size: 16px;
+	color: #FAFAFA;
+	text-align: center;
+	background: #636363; /* Old browsers */
+background: -moz-linear-gradient(top,  #636363 0%, #4d4d4d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#636363), color-stop(100%,#4d4d4d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #636363 0%,#4d4d4d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #636363 0%,#4d4d4d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #636363 0%,#4d4d4d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #636363 0%,#4d4d4d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#636363', endColorstr='#4d4d4d',GradientType=0 ); /* IE6-9 */
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+
+.class_infopanel_body {
+	width: 290px;
+	border-bottom: 1px solid #ededed;
+	font-size: 14px;
+	background: #FAFAFA;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.class_infopanel_leftsplit {
+	width: 124px;
+	padding: 10px;
+	text-align: center;
+	float: left;
+	border-right: 1px solid #EDEDED;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 200;
+	border-bottom-left-radius: 2px;
+}
+
+.class_infopanel_rightsplit {
+	width: 125px;
+	padding: 10px;
+	text-align: center;
+	float: right;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 200;
+	border-bottom-right-radius: 2px;
+}
+
+.class_infopanel_biggertext {
+	font-size: 26px;
+}
+
+.class_infopanel_info1 {
+	float: left;
+	width: 74px;
+	padding-right: 5px;
+	text-align: right;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	font-style: italic;
+	border-right: 1px solid #ededed;
+	border-bottom: 1px solid #ededed;
+}
+
+.class_infopanel_info2 {
+	float: right;
+	width: 205px;
+	padding-left: 5px;
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 16px;
+	border-bottom: 1px solid #ededed;
 }
 
 /* Account Settings Page */
